@@ -1,0 +1,26 @@
+storage:
+  artists: "./data/artists.txt"
+  filtered: "./data/filtered.txt"
+
+telegram:
+  token: "6441401314:AAHKqi6WLdYgEIyT-Gxi9FVakVlCpHlyKHQ"
+  chats:
+    - 1221990903
+    - 749445074
+    - 1063532994
+
+kuwo:
+  enabled: true
+  notifications: true
+
+  failrate:
+    enabled: true
+    limit: 200
+
+  spr: 50 # Songs per request !!! При значениях выше периодически возвращается ошибка 404
+  rps: 50 # Requests per second
+
+  lockfile: "./data/kuwo/.lock"
+  logging:
+    enabled: true
+    file: "./data/kuwo/log.txt"
